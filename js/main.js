@@ -1,14 +1,21 @@
 AOS.init();
 
-$(document).ready(function(){
-  $('.navbar').click(function(){
-    $('.menu').toggleClass('show');
-  });
+const iconBar = document.querySelector('.navbar'); // icona menu
+const menu = document.querySelector('.menu');       // menu
+const menuLinks = document.querySelectorAll('.menu a'); // tutti i link nel menu
 
-  $('.menu a').click(function(){
-    $('.menu').removeClass('show');
+// Toggle menu cliccando sull'icona
+iconBar.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+// Chiudi il menu cliccando su un link
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('show');
   });
 });
+
 
 
 
