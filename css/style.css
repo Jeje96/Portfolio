@@ -96,6 +96,10 @@ body {
   width: 100%;
 }
 
+section {
+  overflow: hidden;
+}
+
 .center {
   text-align: center;
 }
@@ -281,9 +285,7 @@ ul a:hover {
 }
 /********************************************** END HEADER **************************************************/
 
-section {
-  overflow: hidden;
-}
+
 
 
 
